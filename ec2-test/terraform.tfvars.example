@@ -1,0 +1,19 @@
+# AWS Configuration
+aws_region = "ap-northeast-2"
+
+# Project Configuration
+environment  = "dev"
+project_name = "terraform-ec2"
+
+# EC2 Configuration
+instance_type = "t3.micro"
+ami_id        = "ami-0c9c942bd7bf113a2"  # Amazon Linux 2023 AMI
+key_name      = "my-ec2-key"
+instance_name = "terraform-ec2-instance"
+
+# Storage Configuration
+volume_size = 20
+volume_type = "gp3"
+
+# Security Configuration
+allowed_cidr_blocks = ["0.0.0.0/0"]  # 프로덕션에서는 특정 IP로 제한 권장
